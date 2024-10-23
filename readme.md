@@ -9,8 +9,8 @@ More information on the **BioRodDis project** can be found
 
 # Drivers of host-pathogen community assemblies in European forests and urban green spaces
 
-Vincent Sluydts<sup>\*,1</sup>, Marie Bouilloud<sup>\#,2,3</sup>,Maxime
-Galan<sup>\#,4</sup>, Hussein Alburkat<sup>\#,5</sup>, Anais
+Vincent Sluydts<sup>\*,1</sup>, Marie Bouilloud<sup>2,3</sup>,Maxime
+Galan<sup>4</sup>, Hussein Alburkat<sup>\#,5</sup>, Anais
 Bordes<sup>\#,4</sup>, Vincent Bourret<sup>\#,6</sup>, Valeria
 Colombo<sup>\#,1</sup>, Luc DeBruyn<sup>\#,1</sup>, Lara
 Dutra<sup>\#,5</sup>, Jana Eccard<sup>\#,7</sup>, Jasmin
@@ -19,9 +19,9 @@ Grzybek<sup>\#,8</sup>, Heikki Henttonen<sup>\#,9</sup>, Jens
 Jacob<sup>\#,10</sup>, Andrew McManus<sup>\#,11</sup>, Tarja
 Sironen<sup>\#,5</sup>, Peter Stuart<sup>\#,11</sup>, Caroline
 Tatard<sup>\#,4</sup>, Benjamin Roche<sup>3</sup> Herwig
-Leirs<sup>1</sup>, Nathalie Charbonnel<sup>4</sup>
+Leirs<sup>1</sup>, Nathalie Charbonnel<sup>\*,4</sup>
 
-<sup>\#</sup>Equal contribution of coauthors (alphabetic order)
+<sup>\#</sup> Equal contribution of coauthors (alphabetic order)
 
 <b>Affiliations</b>
 
@@ -50,14 +50,15 @@ Rodent Research, Münster, Germany;
 <sup>11</sup> MunsterTechnological University, Department of Biological
 and Pharmaceutical Sciences, Clash, Tralee, Ireland, V92 CX88.
 
-<sup>\*</sup>Corresponding author: <vincent.sluydts@uantwerpen.be>
+<sup>\*</sup> Corresponding authors: <vincent.sluydts@uantwerpen.be>;
+<Nathalie.Charbonnel@inrae.fr>
 
 ## Repository and reuse information
 
 This open access repository accompanies the article “Drivers of
 host-pathogen community assemblies in European forests and urban green
-spaces” (Sluydts et al. 2024. BioRxiv). It provides all data and code
-needed to repeat the main analyses and reproduce the figures.  
+spaces” (Sluydts et al. 2024. BioRxiv). It provides data and code needed
+to repeat the main analyses and reproduce the figures.  
 When using the code and/or data available here, please refer to the
 project license and cite the article using the following citation:
 
@@ -69,13 +70,12 @@ Bibtex record:
     @article{sluydts_drivers_2024,
     title = {Drivers of host-pathogen community assemblies in European forests and urban green spaces}, 
     journal = {bioRxiv},
-    author = {Sluydts, Vincent and Leirs, Herwig and Charbonnel, Nathalie}, 
+    author = {Sluydts, Vincent and Bouilloud, Maria and Galan, Maxime and Alburkat, Hussein and Bordes Anais and Bourret, Vincent and Colombo, Valeria and DeBruyn, Luc and Dutra, Lara and Eccard, Jana and Firozpoor, Jasmin and Gallet, Romain and Grzybek, Maciej and Henttonen, Heiki and Jacob, jens and McManus, andrew and Sironen, Tarja and Stuart, Peter and Tatard, Caroline and Roche, Benjamin and Leirs, Herwig and Charbonnel, Nathalie}, 
     year = {2024}   
     }
 
 ZENODO repository associated with the 16Sv4 rRNA gene data from the
 spleen:
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12518286.svg)](https://doi.org/10.5281/zenodo.12518286)
 
 ZENODO repository associated with the 16Sv4 rRNA gene data from the
@@ -121,65 +121,72 @@ behind the HMSC software.
   screened and the additional covariates extracted. Below a content
   descriptions of variables in the bioroddis data set.
 
-**Individual information**  
-- <i>“id_code”</i> \[factor\]: Unique code per specimen collected.  
-- <i>“species”</i> \[factor\]: species name of each specimen.  
-- <i>“genus”</i> \[factor\]: Genus name of the specimen.  
-- <i>“sex”</i> \[factor\]: Sex of the specimen, M for Male and F for
+**Individual host characteristics**  
+- <i>“Id_code”</i> \[factor\]: Unique code per specimen collected.  
+- <i>“Species”</i> \[factor\]: species name of each specimen.  
+- <i>“Genus”</i> \[factor\]: Genus name of the specimen.  
+- <i>“Sex”</i> \[factor\]: Sex of the specimen, M for Male and F for
 Female.  
-- <i>“weight”</i> \[numeric\]: Weight of the specimen to the nearest
+- <i>“Weight”</i> \[numeric\]: Weight of the specimen to the nearest
 tenth of a gram.  
-- <i>“body_length”</i> \[numeric\]: Body length of the specimen to the
+- <i>“Body_length”</i> \[numeric\]: Body length of the specimen to the
 nearest tenth of a cm.  
-- <i>“tail_length”</i> \[numeric\]: Tail length of the specimen to the
+- <i>“Tail_length”</i> \[numeric\]: Tail length of the specimen to the
 nearest tenth of a cm.  
-- <i>“maturity”</i> \[factor\]: Sexual maturity of the specimen, ie:
+- <i>“Maturity”</i> \[factor\]: Sexual maturity of the specimen, ie:
 Mature or Immature  
-- <i>“richness_gut_species”</i> \[numeric\]: Richness of the gut
+- <i>“Richness_gut_species”</i> \[numeric\]: Richness of the gut
 microbiome from 16S analyses.  
 - <i>“lrich”</i> \[numeric\]: natural logarithm transformed
-richness_gut_species.  
-- <i>“shannon_gut_species”</i> \[numeric\]: Shannon index of the gut
+Richness_gut_species.  
+- <i>“Shannon_gut_species”</i> \[numeric\]: Shannon index of the gut
 microbiome.  
-- <i>“simpson_gut_species”</i> \[numeric\]: Simpson index of the gut
+- <i>“Simpson_gut_species”</i> \[numeric\]: Simpson index of the gut
 microbiome.
 
 **Trap session information**  
-- <i>“country”</i> \[factor\]: Country of trapped specimen.  
-- <i>“site_code”</i> \[factor\]: Code of site in country of trapped
+- <i>“Country”</i> \[factor\]: Country of trapped specimen.  
+- <i>“Site_code”</i> \[factor\]: Code of site in country of trapped
 specimen.  
-- <i>“locality”</i> \[character\]:  
-- <i>“longitude”</i> \[numeric\]: Longitude coordinates for locality.  
-- <i>“latitude”</i> \[numeric\]: Latitude coordinates for locality.  
-- <i>“season”</i> \[factor\]: Season in which the trapping was conducted
+- <i>“Longitude”</i> \[numeric\]: Longitude coordinates for locality.  
+- <i>“Latitude”</i> \[numeric\]: Latitude coordinates for locality.  
+- <i>“Season”</i> \[factor\]: Season in which the trapping was conducted
 (Spring or Autumn)  
-- <i>“year”</i> \[factor\]: Year in which trapping was conducted
-(2020-2021-2022).  
-- <i>“period”</i> \[factor\]: Combo of season and year.  
-- <i>“spat_temp”</i> \[factor\]: Combo of site_code, season and year.
+- <i>“Year”</i> \[factor\]: Year in which trapping was conducted
+(2020-2021-2022). - <i>“Period”</i> \[factor\]: Combo of season and
+year.  
+- <i>“Spat_temp”</i> \[factor\]: Combo of site_code, season and year.
 
 **Covariates**
 
-- <i>“grass”</i> \[numeric\]: Percent grassland in a 5km circular buffer
-  zone around the site location.  
-- <i>“f_broad”</i> \[numeric\]: Percent of broadleaved forest  
-- <i>“f_coni”</i> \[numeric\]: Percent of coniferous forest  
-- <i>“w_perm”</i> \[numeric\]: Percent of permanent water bodies  
-- <i>“w_temp”</i> \[numeric\]: Percent of temporary water bodies
+- <i>“grass”</i> \[numeric\]: Percent grassland within a 1km circular
+  buffer zone around the site location.  
+- <i>“f.broad”</i> \[numeric\]: Percent of broadleaved forest within a
+  1km circular buffer zone around the site location.  
+- <i>“f.coni”</i> \[numeric\]: Percent of coniferous forest within a 1km
+  circular buffer zone around the site location.
+- <i>“w.perm”</i> \[numeric\]: Percent of permanent water bodies within
+  a 1km circular buffer zone around the site location.
+- <i>“w.temp”</i> \[numeric\]: Percent of temporary water bodies within
+  a 1km circular buffer zone around the site location.
 - <i>“hab2”</i> \[factor\]: Habitat either forested \[forest\] or urban
   green spaces \[urban\]
 - <i>“hab3”</i> \[factor\]: Additional habitat classification with
   either forested \[forest\] or urban green spaces \[urban\], or sampled
   in a zoo \[zoo\].
-- <i>“hsd”</i> \[numeric\]: Host Species Diversity, extracted from XXX
-  within a XXXkm buffer zone and taken as the minimum  
-- <i>“total_rain”</i> \[numeric\]
-- <i>“max_tem1”</i> \[numeric\]
-- <i>“min_temp1”</i> \[numeric\]
+- <i>“total_rain”</i> \[numeric\]: Accumulated rainfall the previous
+  year since the data of sampling in a 1 km buffer around the sampling
+  location.
+- <i>“max_temp1”</i> \[numeric\]: Maximum temperature during the
+  previous summer period
+- <i>“min_temp1”</i> \[numeric\]: Minimum temperature over the previous
+  winter period
 - <i>“imper”</i> \[numeric\]: Percent imperviousness around a site
   locality
-- <i>“pop”</i> \[numeric\]:
-- <i>“hfi”</i> \[numeric\]: Human Footprint Index, extracted from within
+- <i>“pop”</i> \[numeric\]: Population density
+- <i>“HSD”</i> \[numeric\]: Host Species Diversity, extracted from 10km
+  buffer zone and taken as the minimum  
+- <i>“HFI”</i> \[numeric\]: Human Footprint Index, extracted from within
   a 5km buffer zone
 
 **Pathogen screening**  
@@ -215,12 +222,13 @@ or unsuccessfully tested.
 - “IFA_DOBRV”  
 - “IFA_LCMV”
 
-<i>disease_traits.csv</i>: CSV file containing the disease traits used
+<i>disease_traits3.csv</i>: CSV file containing the disease traits used
 in the HMSC analysis.
 
 ### TODO:
 
 - [ ] add script for the network analysis
+- [ ] add rds datafile including covariate + check names
 - [ ] add a cleaned script for coinfection figure 4
 - [ ] check reference to final published version, title etc…
 - [ ] add final model run and directories?
