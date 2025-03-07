@@ -11,7 +11,6 @@ library(writexl)
 
 
 #A stand for automated, can be ran a an R job
-#start 29/02 om 16:00
 
 load(file = "models/unfitted_BR4")
 
