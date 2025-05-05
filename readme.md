@@ -85,7 +85,7 @@ colon:
 ## Content description
 
 - **[`Statistics_Bioroddis.Rmd`](Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
-
+ - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
 
 - **[`HMSC_setup.Rmd`](HMSC_setup.Rmd)**: this script sets up the
   required data and models for running the HMSC. It produces a object
@@ -102,8 +102,6 @@ colon:
     folder `models/models_BR4_100_samples_5000_chains_4.Rdata` sampling
     4 MCMC chains for 5000 samples with a thinning of 100.
     
-    - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
-  
 - [`S2_compute_model_fit_A.R`](S2_compute_model_fit_A.R): this script
   takes the fitted model and calculates explanatory and predictive
   performances, as well as WAIC for a given model input.
