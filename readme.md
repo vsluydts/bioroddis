@@ -101,6 +101,9 @@ colon:
   - **Script Output**: an Rdata file saved in the directories models
     folder `models/models_BR4_100_samples_5000_chains_4.Rdata` sampling
     4 MCMC chains for 5000 samples with a thinning of 100.
+    
+    - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
+  
 - [`S2_compute_model_fit_A.R`](S2_compute_model_fit_A.R): this script
   takes the fitted model and calculates explanatory and predictive
   performances, as well as WAIC for a given model input.
