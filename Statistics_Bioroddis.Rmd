@@ -64,7 +64,7 @@ Note that in Poland trapping did not take place in an Urban green spaces.
 
 ### Community composition
 
-Poland removed from analysis as trapping was conducted in one habitat only. 
+Poland was removed from community analysis as trapping was conducted in one habitat only. 
 GEFKAT and GEFKIR are sites in GERMANY that were abandoned after low number of rodents were collected and Winter 2020 is a site in Belgium were an additional trap was placed at the university campus off-season. 
 
 ```{r }
