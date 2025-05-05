@@ -101,8 +101,14 @@ adonis2(m3 ~ Country/hab2, data=meta, permutations = 999, method="bray", by="one
 
 Life history and mass corrected LH data were obtained for our collected specimens from Albery et al. 2022:  https://github.com/viralemergence/UrbanOutputters/tree/main/Data/ 
 
+
 ```{r}
+host <- readRDS(file='lifehist.rds')
+```
+
+```{r eval=FALSE, include=FALSE}
 host <- read.csv("C:/Users/vince/OneDrive - Universiteit Antwerpen/VISL_HD/Projects/BioRodDis/data/databases/Albery/reservoir_data_for_vin.csv", sep=",", dec=".")
+saveRDS(host, file='lifehist.rds')
 ```
 
 ```{r}

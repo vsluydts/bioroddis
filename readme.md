@@ -85,7 +85,8 @@ colon:
 ## Content description
 
 - **[`Statistics_Bioroddis.Rmd`](Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
- - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
+  - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
+  - [`lifehist.rds`](lifehist.rds): additional life-history data for each host extracted from Albery et al., 2022 Nature Ecology & Evolution [based on Plourde et al., 2017 PlosOne]
 
 - **[`HMSC_setup.Rmd`](HMSC_setup.Rmd)**: this script sets up the
   required data and models for running the HMSC. It produces a object
