@@ -160,7 +160,7 @@ specimen.
 - <i>“Year”</i> \[factor\]: Year in which trapping was conducted
 (2020-2021-2022). - <i>“Period”</i> \[factor\]: Combo of season and
 year.  
-- <i>“Spat_temp”</i> \[factor\]: Combo of site_code, season and year.
+- <i>“SpatTemp”</i> \[factor\]: Combo of site_code, season and year.
 
 **Covariates**
 
@@ -189,10 +189,11 @@ year.
 - <i>“imper”</i> \[numeric\]: Percent imperviousness around a site
   locality
 - <i>“pop”</i> \[numeric\]: Population density
-- <i>“HSD”</i> \[numeric\]: Host Species Diversity, extracted from 10km
-  buffer zone and taken as the minimum  
 - <i>“HFI”</i> \[numeric\]: Human Footprint Index, extracted from within
   a 5km buffer zone
+- <i>“HSD”</i> \[numeric\]: Host Species Diversity, extracted from 10km
+  buffer zone and taken as the minimum  
+
 
 **Pathogen screening**  
 Note that all screened pathogens have a numeric output with a 1 for a
