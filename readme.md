@@ -84,6 +84,9 @@ colon:
 
 ## Content description
 
+- **[`Statistics_Bioroddis.Rmd`](Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
+
+
 - **[`HMSC_setup.Rmd`](HMSC_setup.Rmd)**: this script sets up the
   required data and models for running the HMSC. It produces a object
   containing the different model settings, data and model names to be
@@ -227,7 +230,6 @@ in the HMSC analysis.
 
 ### TODO:
 
-- [ ] add script for the network analysis
 - [ ] add rds datafile including covariate + check names
 - [ ] add a cleaned script for coinfection figure 4
 - [ ] check reference to final published version, title etc…
