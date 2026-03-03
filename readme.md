@@ -231,9 +231,3 @@ or unsuccessfully tested.
 <i>disease_traits3.csv</i>: CSV file containing the disease traits used
 in the HMSC analysis.
 
-### TODO:
-
-- [ ] add rds datafile including covariate + check names
-- [ ] add a cleaned script for coinfection figure 4
-- [ ] check reference to final published version, title etc…
-- [ ] add final model run and directories?
