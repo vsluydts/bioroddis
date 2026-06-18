@@ -151,6 +151,7 @@ dat3 %>%
 dat3 %>% dplyr::select(all_of(needed)) %>% na.omit()-> dat4
 ```
 
+
 Final check 
 ```{r}
 dat4 %>% select(Species) %>% table()
@@ -337,7 +338,7 @@ EU4.test = sampleMcmc(BR4, thin = thin, samples = samples, transient = transient
 ```
 
 ---
-## STEP 4: SAVE INTO object for automatic running 
+## STEP 4: SAVE INTO object for automatic running  
 
 Here we save all the information for running the models and this will be loaded in a script which can be run as a background job and uses different cores for each chain [see script: HMSC_run_models.R].
 
