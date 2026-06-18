@@ -84,23 +84,23 @@ colon:
 
 ## Content description
 
-- **[`Statistics_Bioroddis.Rmd`](Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
+- **[`Statistics_Bioroddis.Rmd`](/scripts/Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
   - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
-  - [`lifehist.rds`](lifehist.rds): additional life-history data for each host extracted from Albery et al., 2022 Nature Ecology & Evolution [based on Plourde et al., 2017 PlosOne]
+  - [`lifehist.rds`](/data/lifehist.rds): additional life-history data for each host extracted from Albery et al., 2022 Nature Ecology & Evolution [based on Plourde et al., 2017 PlosOne]
 
-- **[`HMSC_setup.Rmd`](HMSC_setup.Rmd)**: this script sets up the
+- **[`HMSC_setup.Rmd`](/scripts/HMSC_setup.Rmd)**: this script sets up the
   required data and models for running the HMSC. It produces a object
   containing the different model settings, data and model names to be
   used in S1_run_models_A.R. The example provided is for the final model
   presented, but can be easily adapted to other models.
   - **Script Output**: an R object named `unfitted_BR4` to be used in
-    `S1_run_models_A.R`.
+    `/scripts/S1_run_models_A.R`.
 - [`S1_run_models_A.R`](S1_run_models_A.R): this script takes the
   unfitted model input and runs the MCMC samples over a specified amount
   of samples and chains. It provides an Rdata file containing the MCMC
   outputs.
   - **Script Output**: an Rdata file saved in the directories models
-    folder `models/models_BR4_100_samples_5000_chains_4.Rdata` sampling
+    folder `model/models_BR4_100_samples_5000_chains_4.Rdata` sampling
     4 MCMC chains for 5000 samples with a thinning of 100.
     
 - [`S2_compute_model_fit_A.R`](S2_compute_model_fit_A.R): this script
@@ -117,8 +117,6 @@ behind the HMSC software.
 - [`Fig3_bubble_plot.R`](Fig3_bubble_plot.R): R markdown containing all
   code needed to reproduce bubble plot figure 3.
 
-- [`Fig4_Coinfection_plot.R`](Fig4_Coinfection_plot.R): R markdown
-  containing all code needed to reproduce figure 4.
 
 - **[`bioroddis.rds`](bioroddis.rds)**: R data object containing all
   data required to reproduce the output presented in the publication.
