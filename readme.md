@@ -56,22 +56,22 @@ and Pharmaceutical Sciences, Clash, Tralee, Ireland, V92 CX88.
 ## Repository and reuse information
 
 This open access repository accompanies the article “Drivers of
-host-pathogen community assemblies in European forests and urban green
-spaces” (Sluydts et al. 2024. BioRxiv). It provides data and code needed
+host-pathogen community assemblages in European forests and urban green
+spaces” (Sluydts et al. 2026. Integrative Zoology). It provides data and code needed
 to repeat the main analyses and reproduce the figures.  
 When using the code and/or data available here, please refer to the
 project license and cite the article using the following citation:
 
-Sluydts V. et al. “Drivers of host-pathogen community assemblies in
-European forests and urban green spaces”. bioRxiv 2024.
+Sluydts V. et al. “Drivers of host-pathogen community assemblages in
+European forests and urban green spaces”. Integrative Zoology 2026.
 
 Bibtex record:
 
-    @article{sluydts_drivers_2024,
-    title = {Drivers of host-pathogen community assemblies in European forests and urban green spaces}, 
-    journal = {bioRxiv},
+    @article{sluydts_drivers_2026,
+    title = {Drivers of host-pathogen community assemblages in European forests and urban green spaces}, 
+    journal = {Integrative Zoology},
     author = {Sluydts, Vincent and Bouilloud, Maria and Galan, Maxime and Alburkat, Hussein and Bordes Anais and Bourret, Vincent and Colombo, Valeria and DeBruyn, Luc and Dutra, Lara and Eccard, Jana and Firozpoor, Jasmin and Gallet, Romain and Grzybek, Maciej and Henttonen, Heiki and Jacob, jens and McManus, andrew and Sironen, Tarja and Stuart, Peter and Tatard, Caroline and Roche, Benjamin and Leirs, Herwig and Charbonnel, Nathalie}, 
-    year = {2024}   
+    year = {2026}   
     }
 
 ZENODO repository associated with the 16Sv4 rRNA gene data from the
@@ -84,26 +84,27 @@ colon:
 
 ## Content description
 
-- **[`Statistics_Bioroddis.Rmd`](/scripts/Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
+- **[`Statistics_Bioroddis.Rmd`](scripts/Statistics_Bioroddis.Rmd)** : this script contains the code to reproduce the analysis regarding the community composition, the co-occurrences and the network statistics
   - [`Rest_functions.R`](Rest_functions.R): helper functions used in the Statistics_Bioroddis script.
   - [`lifehist.rds`](/data/lifehist.rds): additional life-history data for each host extracted from Albery et al., 2022 Nature Ecology & Evolution [based on Plourde et al., 2017 PlosOne]
 
-- **[`HMSC_setup.Rmd`](/scripts/HMSC_setup.Rmd)**: this script sets up the
+- **[`HMSC_setup.Rmd`](scripts/HMSC_setup.Rmd)**: this script sets up the
   required data and models for running the HMSC. It produces a object
   containing the different model settings, data and model names to be
   used in S1_run_models_A.R. The example provided is for the final model
   presented, but can be easily adapted to other models.
   - **Script Output**: an R object named `unfitted_BR4` to be used in
-    `/scripts/S1_run_models_A.R`.
+    `scripts/S1_run_models_A.R`.
 - [`S1_run_models_A.R`](S1_run_models_A.R): this script takes the
   unfitted model input and runs the MCMC samples over a specified amount
   of samples and chains. It provides an Rdata file containing the MCMC
   outputs.
   - **Script Output**: an Rdata file saved in the directories models
     folder `model/models_BR4_100_samples_5000_chains_4.Rdata` sampling
-    4 MCMC chains for 5000 samples with a thinning of 100.
+    4 MCMC chains for 5000 samples with a thinning of 100. 
+    This one can be obtained upon request as it exceeds GIT file size limit.
     
-- [`S2_compute_model_fit_A.R`](S2_compute_model_fit_A.R): this script
+- [`S2_compute_model_fit_A.R`](scripts/S2_compute_model_fit_A.R): this script
   takes the fitted model and calculates explanatory and predictive
   performances, as well as WAIC for a given model input.
 
@@ -111,10 +112,10 @@ Credit for these two automated scripts belongs to the
 [team](https://www.helsinki.fi/en/researchgroups/statistical-ecology/software/hmsc)
 behind the HMSC software.
 
-- [`Fig2_Pie_Charts.R`](Fig2_Pie_Charts.R): R markdown containing all
+- [`Fig2_Pie_Charts.R`](scripts/Fig2_Pie_Charts.R): R markdown containing all
   code needed to reproduce pie chart figure 2.  
 
-- [`Fig3_bubble_plot.R`](Fig3_bubble_plot.R): R markdown containing all
+- [`Fig3_bubble_plot.R`](scripts/Fig3_bubble_plot.R): R markdown containing all
   code needed to reproduce bubble plot figure 3.
 
 
@@ -226,6 +227,6 @@ or unsuccessfully tested.
 - “IFA_DOBRV”  
 - “IFA_LCMV”
 
-<i>disease_traits3.csv</i>: CSV file containing the disease traits used
+[`disease_traits.csv`](data/disease_traits.csv): CSV file containing the disease traits used
 in the HMSC analysis.
 
